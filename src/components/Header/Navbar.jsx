@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <Flex
       as="nav"
-      h="108px"
+      minH="108px"
       alignItems="center"
       justifyContent="space-between"
       mx={["30px", "40px", "40px", "80px"]}
