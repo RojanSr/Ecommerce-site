@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Flex, Image, List, ListItem, Input } from "@chakra-ui/react";
-import Logo from "../../../assets/Logo/Logo.png";
+// import Logo from "../../../assets/Logo/Logo.png";
+import Logo from "../../../../assets/Logo/Logo.png";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const personaliseStyle = {

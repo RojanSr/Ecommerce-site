@@ -1,7 +1,8 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import Navbar from "./components/Header/Navbar";
-import Home from "./components/Home/Home.jsx";
+// import Navbar from "./components/Header/Navbar";
+import Navbar from "./components/page/Header/Navbar.jsx";
+import Home from "./components/page/Home/Home.jsx";
 
 export default function App() {
   return (

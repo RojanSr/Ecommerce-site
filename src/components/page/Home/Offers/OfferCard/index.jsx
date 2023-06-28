@@ -14,6 +14,10 @@ export default function OfferCard({ imgSrc, topText, mainText, discountText }) {
       p={["20px 12px", "20px 12px", "67px 28px"]}
       m="0px auto 30px auto"
       borderRadius="12px"
+      transition="transform 0.1s ease-in"
+      _hover={{
+        transform: "scale(1.02)",
+      }}
     >
       <Text as="h3" fontSize="18px">
         {topText}
