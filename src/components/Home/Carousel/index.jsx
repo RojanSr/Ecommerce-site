@@ -11,6 +11,7 @@ import slides from "./CarouselData";
 export default function Carousel() {
   return (
     <div>
+      {/* Carousel for hero */}
       <Sliderify
         navPrevIcon={<LeftArrow fontSize="2rem" />}
         navNextIcon={<RightArrow fontSize="2rem" />}
