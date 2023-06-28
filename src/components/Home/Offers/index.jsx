@@ -12,8 +12,18 @@ export default function Offers() {
       gap="30px"
       m="80px 12px"
     >
-      <OfferCard imgSrc={offer1Img} />
-      <OfferCard imgSrc={offer2Img} />
+      <OfferCard
+        imgSrc={offer1Img}
+        topText="Low Price"
+        mainText="High Coziness"
+        discountText="UPTO 50% OFF"
+      />
+      <OfferCard
+        imgSrc={offer2Img}
+        topText="Beyoung Presents"
+        mainText="Breezy Summer Style"
+        discountText="UPTO 45% OFF"
+      />
     </Flex>
   );
 }
