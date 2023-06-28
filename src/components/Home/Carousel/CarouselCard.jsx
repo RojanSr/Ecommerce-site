@@ -4,7 +4,7 @@ import { VStack, Text, Button, Flex } from "@chakra-ui/react";
 export default function CarouselCard(props) {
   return (
     <Flex
-      h="450px"
+      h="550px"
       color="white"
       bgImg={props.imgSrc}
       bgPosition={props.position}
