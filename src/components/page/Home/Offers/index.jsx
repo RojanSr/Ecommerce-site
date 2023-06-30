@@ -10,7 +10,7 @@ export default function Offers() {
       display={["block", "block", "flex", "flex"]}
       justifyContent="center"
       gap="30px"
-      m="80px 12px"
+      m="80px 12px 0px 12px"
     >
       <OfferCard
         imgSrc={offer1Img}

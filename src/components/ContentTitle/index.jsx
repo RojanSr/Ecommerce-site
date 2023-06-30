@@ -1,10 +1,11 @@
 import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
 
-export default function HeaderTitle({ text }) {
+export default function ContentTitle({ text }) {
   return (
     <Box
       pos="relative"
+      my="70px"
       _before={{
         content: "''",
         pos: "absolute",
@@ -16,8 +17,8 @@ export default function HeaderTitle({ text }) {
     >
       <Heading
         as="h2"
-        fontSize="34px"
-        fontWeight="600"
+        fontSize={["24px", "26px", "28px"]}
+        fontWeight="400"
         letterSpacing="0.68px"
         ml="20px"
       >
