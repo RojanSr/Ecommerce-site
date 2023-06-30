@@ -5,6 +5,7 @@ export default function ContentTitle({ text }) {
   return (
     <Box
       pos="relative"
+      mx={["30px", "40px", "40px", "80px"]}
       my="70px"
       _before={{
         content: "''",
@@ -18,7 +19,7 @@ export default function ContentTitle({ text }) {
       <Heading
         as="h2"
         fontSize={["24px", "26px", "28px"]}
-        fontWeight="400"
+        fontWeight="600"
         letterSpacing="0.68px"
         ml="20px"
       >

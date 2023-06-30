@@ -1,6 +1,6 @@
-import img1 from "../../../../../assets/HeroCarousel/carousel-img-1-min.jpg";
-import img2 from "../../../../../assets/HeroCarousel/carousel-img-2-min.jpg";
-import img3 from "../../../../../assets/HeroCarousel/carousel-img-3-min.jpg";
+import img1 from "../../../../assets/HeroCarousel/carousel-img-1-min.jpg";
+import img2 from "../../../../assets/HeroCarousel/carousel-img-2-min.jpg";
+import img3 from "../../../../assets/HeroCarousel/carousel-img-3-min.jpg";
 
 // Can add more in future
 const slides = [

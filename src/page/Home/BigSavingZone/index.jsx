@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { Box, Grid, GridItem, Flex } from "@chakra-ui/react";
-import HeaderTitle from "../../../ContentTitle";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 import Card from "./Card";
 import { Sliderify } from "react-sliderify";
 import {
   BsArrowLeft as LeftArrow,
   BsArrowRight as RightArrow,
 } from "react-icons/bs";
-import img1 from "../../../../../assets/BigSavingZone/Hawaiian_Shirts.jpg";
-import img2 from "../../../../../assets/BigSavingZone/Printed_Tshirt.jpg";
-import img3 from "../../../../../assets/BigSavingZone/Cargo_Joggers.jpg";
-import img4 from "../../../../../assets/BigSavingZone/Urban_Shirts.jpg";
-import img5 from "../../../../../assets/BigSavingZone/Oversized_Tshirts.jpg";
+import img1 from "../../../../assets/BigSavingZone/Hawaiian_Shirts.jpg";
+import img2 from "../../../../assets/BigSavingZone/Printed_Tshirt.jpg";
+import img3 from "../../../../assets/BigSavingZone/Cargo_Joggers.jpg";
+import img4 from "../../../../assets/BigSavingZone/Urban_Shirts.jpg";
+import img5 from "../../../../assets/BigSavingZone/Oversized_Tshirts.jpg";
 
 export default function BigSavingZone() {
   const [scrWidth, setScrWidth] = useState(0);
@@ -25,15 +24,12 @@ export default function BigSavingZone() {
   return (
     <Box mx={["30px", "40px", "40px", "80px"]}>
       {scrWidth > 700 && console.log("Worked?")}
-      <HeaderTitle text="Big Saving Zone" />
 
       {/* Use Grid only if screen size is bigger that 1120 */}
       {scrWidth > 1110 ? (
         // Shows grid if screen size is more than 1110
         <Grid
           gridTemplateColumns="repeat(6, 1fr)"
-          // gridTemplateColumns="repeat(4, 1fr)"
-          // gridTemplateRows={["repeat(3, 1fr)", "repeat(2, 1fr)"]}
           gridTemplateRows="repeat(2, 1fr)"
           gap="20px"
           justifyContent="center"
@@ -103,6 +99,7 @@ export default function BigSavingZone() {
           navPrevIcon={<LeftArrow fontSize="2rem" color="#3C4242" />}
           navNextIcon={<RightArrow fontSize="2rem" color="#3C4242" />}
           slideDurationInSecs="8"
+          rounded="12px"
         >
           <Card
             imgSrc={img1}
