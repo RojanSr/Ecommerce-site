@@ -1,31 +1,25 @@
 import React, { useState } from "react";
 import { Box, Flex, Image, List, ListItem, Input } from "@chakra-ui/react";
-// import Logo from "../../../assets/Logo/Logo.png";
 import Logo from "../../../../assets/Logo/Logo.png";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-const personaliseStyle = {
-  padding: "12px",
-  borderRadius: "8px",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  background: "#F6F6F6",
-  cursor: "pointer",
-};
-
-const hoverStyle = {
-  fontWeight: "500",
-  color: "black",
-  cursor: "pointer",
-};
-
-const focusStyle = {
-  color: "red",
-};
-
 export default function Navbar() {
   const [hamToggle, setHamToggle] = useState(false);
+
+  const personaliseStyle = {
+    padding: "12px",
+    borderRadius: "8px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "#F6F6F6",
+    cursor: "pointer",
+  };
+
+  const hoverStyle = {
+    color: "black",
+    cursor: "pointer",
+  };
   return (
     <Flex
       as="nav"
