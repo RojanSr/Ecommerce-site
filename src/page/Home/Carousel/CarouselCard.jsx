@@ -5,7 +5,10 @@ export default function CarouselCard(props) {
   return (
     <Flex
       h="550px"
-      color={props.allTextColor ? props.allTextColor : "white"}
+      color={{
+        base: props.allTextColor ? props.allTextColor : "white",
+        lg: "white",
+      }}
       bgImg={props.imgSrc}
       bgPosition={props.position}
       bgSize="cover"
@@ -13,7 +16,7 @@ export default function CarouselCard(props) {
       alignItems="center"
     >
       <VStack alignItems="initial" maxW="439px" ml={["50px", "100px"]}>
-        <Text as="h3" color={{ base: props.categoryColor }}>
+        <Text as="h3" color="black">
           {props.category}
         </Text>
         <Text as="h2" fontSize="50px" fontWeight="700" lineHeight="1" my="20px">
