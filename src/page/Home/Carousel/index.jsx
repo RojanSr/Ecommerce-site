@@ -13,8 +13,8 @@ export default function Carousel() {
     <div>
       {/* Carousel for hero */}
       <Sliderify
-        navPrevIcon={<LeftArrow fontSize="2rem" />}
-        navNextIcon={<RightArrow fontSize="2rem" />}
+        navPrevIcon={<LeftArrow fontSize="2rem" color="#3C4242" />}
+        navNextIcon={<RightArrow fontSize="2rem" color="#3C4242" />}
         slideDurationInSecs="8"
       >
         {slides.map((slide, index) => {
