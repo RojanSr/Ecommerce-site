@@ -10,6 +10,7 @@ const slides = [
     mainText: "Summer Value Pack",
     description: "cool / colorful / comfy",
     position: "center",
+    categoryColor: "black",
   },
   {
     imgSrc: img2,
@@ -24,6 +25,7 @@ const slides = [
     mainText: "Plain Tops",
     description: "simple / comfy",
     position: "top",
+    allTextColor: "black",
   },
 ];
 

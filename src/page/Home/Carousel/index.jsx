@@ -26,6 +26,8 @@ export default function Carousel() {
               mainText={slide.mainText}
               description={slide.description}
               position={slide.position}
+              categoryColor={slide.categoryColor}
+              allTextColor={slide.allTextColor}
             />
           );
         })}
