@@ -13,19 +13,20 @@ import img4 from "../../../../assets/BigSavingZone/Urban_Shirts.jpg";
 import img5 from "../../../../assets/BigSavingZone/Oversized_Tshirts.jpg";
 
 export default function BigSavingZone() {
-  const [scrWidth, setScrWidth] = useState(0);
+  const [scrWidth, setScrWidth] = useState(null);
   useEffect(() => {
     function handleResize() {
       setScrWidth(window.innerWidth);
     }
+    // Everytime page reloads it will initially run the function once setting initial value for scrWidth state
+    handleResize();
+    // Call function on screen resize
     window.addEventListener("resize", handleResize);
   }, []);
 
   return (
     <Box mx={["30px", "40px", "40px", "80px"]}>
-      {scrWidth > 700 && console.log("Worked?")}
-
-      {/* Use Grid only if screen size is bigger that 1120 */}
+      {/* Use Grid only if screen size is bigger than 1110 */}
       {scrWidth > 1110 ? (
         // Shows grid if screen size is more than 1110
         <Grid
