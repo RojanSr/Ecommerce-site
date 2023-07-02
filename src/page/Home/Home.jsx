@@ -5,6 +5,7 @@ import Offers from "./Offers";
 import NewArrival from "./NewArrival";
 import BigSavingZone from "./BigSavingZone";
 import ContentTitle from "../../components/ContentTitle";
+import Brands from "./Brands";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <NewArrival />
       <ContentTitle text="Big Saving Zone" />
       <BigSavingZone />
+      <Brands />
     </Box>
   );
 }
