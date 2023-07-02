@@ -22,9 +22,9 @@ export default function Brands() {
         off on brands
       </Text>
       <Flex justifyContent="center" gap="25px" p="12px" wrap="wrap">
-        {brandData.map((image) => {
+        {brandData.map((image, index) => {
           return (
-            <Box p="12px" bg="#fff" borderRadius="12px">
+            <Box p="12px" bg="#fff" borderRadius="12px" key={index}>
               <Image
                 w={{ base: "60px", lg: "149.085px" }}
                 h={{ base: "30px", lg: "53.469px" }}
