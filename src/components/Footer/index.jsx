@@ -6,7 +6,7 @@ import FooterSocials from "./FooterSocials";
 export default function Footer() {
   return (
     <Box bg="#3C4242" as="footer">
-      <Box m="0px 180px 0px 180px">
+      <Box m={{ base: "0px 40px", lg: "0px 180px" }}>
         <FooterInformation />
         <FooterSocials />
         <Flex justifyContent="center" borderTop="2px solid #BEBCBD" p="60px">
