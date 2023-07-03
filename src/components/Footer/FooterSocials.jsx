@@ -22,8 +22,9 @@ export default function FooterSocials() {
       alignItems="center"
       color="#F6F6F6"
       fontSize="28px"
+      display={{ base: "block", lg: "flex" }}
     >
-      <Flex gap="6px">
+      <Flex gap="6px" mb="30px">
         <Box>
           <BiLogoFacebook fontSize="2.4rem" style={logoStyle} />
         </Box>
@@ -38,18 +39,20 @@ export default function FooterSocials() {
         </Box>
       </Flex>
       <Flex direction="column">
-        <Heading fontSize="28px">Download the App</Heading>
+        <Heading fontSize={{ base: "18px", lg: "28px" }}>
+          Download the App
+        </Heading>
         <Flex my="19px">
           <Image
             src={googleStore}
-            w="200px"
+            w={{ base: "120px", lg: "200px" }}
             cursor="pointer"
             transition="transform 0.2s ease-in-out"
             _hover={{ transform: "scale(1.025)" }}
           />
           <Image
             src={appStore}
-            w="200px"
+            w={{ base: "120px", lg: "200px" }}
             cursor="pointer"
             transition="transform 0.2s ease-in-out"
             _hover={{ transform: "scale(1.025)" }}

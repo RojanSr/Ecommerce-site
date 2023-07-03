@@ -9,8 +9,16 @@ export default function Footer() {
       <Box m={{ base: "0px 40px", lg: "0px 180px" }}>
         <FooterInformation />
         <FooterSocials />
-        <Flex justifyContent="center" borderTop="2px solid #BEBCBD" p="60px">
-          <Text color="#fff" fontSize="18px" fontWeight="500">
+        <Flex
+          justifyContent="center"
+          borderTop="2px solid #BEBCBD"
+          py={{ base: "20px", lg: "60px" }}
+        >
+          <Text
+            color="#fff"
+            fontSize={{ base: "9px", lg: "18px" }}
+            fontWeight="500"
+          >
             Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
           </Text>
         </Flex>
