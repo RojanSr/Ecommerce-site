@@ -3,6 +3,7 @@ import { Box, Button, Flex, Image } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../../App";
 import ProductDetails from "./ProductDetails";
+import ContentTitle from "../../components/ContentTitle";
 
 export default function ProductView() {
   const data = useContext(ProductContext);
@@ -14,33 +15,37 @@ export default function ProductView() {
   const selected = data.find((product) => product.id == id);
 
   return (
-    <Flex
-      mx={{ base: "30px", md: "150px", lg: "200px" }}
-      gap="150px"
-      display={{ base: "block", lg: "flex" }}
-    >
-      <Box
-        h="350px"
-        w="300px"
-        minW="280px"
-        p="50px"
-        boxShadow="0px 0px 6px 4px rgba(0,0,0,0.4)"
-        borderRadius="12px"
+    <Box>
+      <ContentTitle text={`Product > Category > ${selected.category}`} />
+
+      <Flex
+        mx={{ base: "30px", md: "150px", lg: "200px" }}
+        gap="150px"
+        display={{ base: "block", lg: "flex" }}
       >
-        <Image
-          src={`${selected.image}`}
-          objectFit="contain"
-          h="100%"
-          w="100%"
-        ></Image>
-      </Box>
-      <Box mt="50px">
-        <ProductDetails title={selected.title} price={selected.price} />
-        <Flex gap="40px">
-          <Button>Add to cart</Button>
-          <Button>Add to Favourite</Button>
-        </Flex>
-      </Box>
-    </Flex>
+        <Box
+          h="350px"
+          w="300px"
+          minW="280px"
+          p="50px"
+          boxShadow="0px 0px 6px 4px rgba(0,0,0,0.4)"
+          borderRadius="12px"
+        >
+          <Image
+            src={`${selected.image}`}
+            objectFit="contain"
+            h="100%"
+            w="100%"
+          ></Image>
+        </Box>
+        <Box mt="50px">
+          <ProductDetails title={selected.title} price={selected.price} />
+          <Flex gap="40px">
+            <Button>Add to cart</Button>
+            <Button>Add to Favourite</Button>
+          </Flex>
+        </Box>
+      </Flex>
+    </Box>
   );
 }
