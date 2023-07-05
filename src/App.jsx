@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 
 import { Route, Routes } from "react-router-dom";
 import ProductView from "./page/ProductView/index.jsx";
+import Combo from "./page/Combo/Combo.jsx";
 
 export const ProductContext = React.createContext();
 export default function App() {
@@ -49,6 +50,14 @@ export default function App() {
           element={
             <ProductContext.Provider value={products ? products : []}>
               <ProductView />
+            </ProductContext.Provider>
+          }
+        />
+        <Route
+          path="/Combo"
+          element={
+            <ProductContext.Provider value={products ? products : []}>
+              <Combo />
             </ProductContext.Provider>
           }
         />
