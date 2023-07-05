@@ -45,7 +45,9 @@ export default function Navbar() {
           <ListItem _hover={hoverStyle}>Shop</ListItem>
           <ListItem _hover={hoverStyle}>Men</ListItem>
           <ListItem _hover={hoverStyle}>Women</ListItem>
-          <ListItem _hover={hoverStyle}>Combo</ListItem>
+          <ListItem _hover={hoverStyle}>
+            <Link to="/Combo">Combo</Link>
+          </ListItem>
         </List>
 
         <Input
@@ -107,7 +109,9 @@ export default function Navbar() {
               <ListItem cursor="pointer">Shop</ListItem>
               <ListItem cursor="pointer">Men</ListItem>
               <ListItem cursor="pointer">Women</ListItem>
-              <ListItem cursor="pointer">Combo</ListItem>
+              <ListItem cursor="pointer">
+                <Link to="/Combo">Combo</Link>
+              </ListItem>
             </List>
           </Box>
         )}
