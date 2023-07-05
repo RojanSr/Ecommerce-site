@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Box, Flex, Image } from "@chakra-ui/react";
+import { Box, Button, Flex, Image } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../../App";
 import ProductDetails from "./ProductDetails";
@@ -14,18 +14,33 @@ export default function ProductView() {
   const selected = data.find((product) => product.id == id);
 
   return (
-    <Flex m="0px 250px" gap="150px" mb="100px">
+    <Flex
+      mx={{ base: "30px", md: "150px", lg: "200px" }}
+      gap="150px"
+      display={{ base: "block", lg: "flex" }}
+    >
       <Box
-        maxH="500px"
-        minH="300px"
-        maxW="400px"
+        h="350px"
+        w="300px"
+        minW="280px"
         p="50px"
         boxShadow="0px 0px 6px 4px rgba(0,0,0,0.4)"
         borderRadius="12px"
       >
-        <Image src={`${selected.image}`} objectFit="contain"></Image>
+        <Image
+          src={`${selected.image}`}
+          objectFit="contain"
+          h="100%"
+          w="100%"
+        ></Image>
       </Box>
-      <ProductDetails title={selected.title} price={selected.price} />
+      <Box mt="50px">
+        <ProductDetails title={selected.title} price={selected.price} />
+        <Flex gap="40px">
+          <Button>Add to cart</Button>
+          <Button>Add to Favourite</Button>
+        </Flex>
+      </Box>
     </Flex>
   );
 }

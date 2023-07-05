@@ -5,11 +5,16 @@ import SizeSelect from "./SizeSelect";
 export default function ProductDetails(props) {
   return (
     <Box color="#3C4242">
-      <Heading fontSize="34px" fontWeight="600">
+      <Heading fontSize={{ base: "22px", lg: "34px" }} fontWeight="600">
         {props.title}
       </Heading>
       <SizeSelect />
-      <Text>Price: {props.price}</Text>
+      <Text my="20px">
+        Price:{" "}
+        <Text as="span" color="red.500">
+          {props.price}$
+        </Text>
+      </Text>
     </Box>
   );
 }

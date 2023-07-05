@@ -13,8 +13,8 @@ export default function SizeSelect() {
   }
   return (
     <>
-      <Text fontSize="18px" m="30px 0px 10px 0px">
-        Select Size
+      <Text fontSize="16px" m="30px 0px 10px 0px" color="blackAlpha.600">
+        Select Size:
       </Text>
       <Flex gap="20px">
         {sizeArr.map((el, index) => (
