@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ArrivedCard from "./ArrivedCard";
+import Card from "../../../components/Card";
 import { Flex, Box } from "@chakra-ui/react";
 import { ProductContext } from "../../../App";
 
@@ -21,9 +21,10 @@ export default function NewArrival() {
               return;
             }
             return (
-              <ArrivedCard
+              <Card
                 name={item.title}
                 imgSrc={item.image}
+                price={item.price}
                 id={item.id}
                 key={index}
               />
