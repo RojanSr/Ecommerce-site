@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Box } from "@chakra-ui/react";
-import Navbar from "./page/Header/Navbar.jsx";
+import Navbar from "./components/Header/Navbar.jsx";
 import Home from "./page/Home/Home.jsx";
 import Footer from "./components/Footer";
 

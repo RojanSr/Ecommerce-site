@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box, Flex, Image, List, ListItem, Input } from "@chakra-ui/react";
 import Logo from "../../../assets/Logo/Logo.png";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [hamToggle, setHamToggle] = useState(false);
@@ -30,7 +31,9 @@ export default function Navbar() {
       color="#807D7E"
       gap="20px"
     >
-      <Image src={Logo} h="35px"></Image>
+      <Link to="/">
+        <Image src={Logo} h="40px"></Image>
+      </Link>
 
       <Flex gap={["12px", "30px"]} display={["none", "none", "flex"]}>
         <List
