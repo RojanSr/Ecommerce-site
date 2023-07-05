@@ -7,7 +7,7 @@ export default function FooterInformation() {
       <Flex
         color="#F6F6F6"
         justifyContent="space-between"
-        gap={{ base: "10px", lg: "80px" }}
+        gap={{ base: "10px", lg: "40px" }}
         py="60px"
         wrap="wrap"
       >
@@ -15,44 +15,44 @@ export default function FooterInformation() {
           <Heading fontSize={{ base: "18px", lg: "28px" }} my="20px">
             Need Help
           </Heading>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>Contact Us</Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>Track Order</Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>Returns & Refunds</Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>FAQ's</Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>Career</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>Contact Us</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>Track Order</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>Returns & Refunds</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>FAQ's</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>Career</Text>
         </Flex>
         <Flex direction="column" gap={{ base: "5px", lg: "15px" }}>
           <Heading fontSize={{ base: "18px", lg: "28px" }} my="20px">
             Company
           </Heading>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>About Us</Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>euphoria Blog</Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>euphoriastan</Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>Collaboration</Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>Media</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>About Us</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>euphoria Blog</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>euphoriastan</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>Collaboration</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>Media</Text>
         </Flex>
         <Flex direction="column" gap={{ base: "5px", lg: "15px" }}>
           <Heading fontSize={{ base: "18px", lg: "28px" }} my="20px">
             More Info
           </Heading>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>
             Term and Conditions
           </Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>Privacy Policy</Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>Shipping Policy</Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>Sitemap</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>Privacy Policy</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>Shipping Policy</Text>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>Sitemap</Text>
         </Flex>
         <Flex direction="column" gap={{ base: "5px", lg: "15px" }}>
           <Heading fontSize={{ base: "18px", lg: "28px" }} my="20px">
             Location
           </Heading>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>
             support@euphoria.in
           </Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>
             Eklingpura Chouraha, Ahmedabad Main Road
           </Text>
-          <Text fontSize={{ base: "12px", lg: "18px" }}>
+          <Text fontSize={{ base: "12px", lg: "14px" }}>
             (NH 8- Near Mahadev Hotel) Udaipur, India- 313002
           </Text>
         </Flex>

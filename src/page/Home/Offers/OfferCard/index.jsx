@@ -9,8 +9,8 @@ export default function OfferCard({ imgSrc, topText, mainText, discountText }) {
       bgRepeat="no-repeat"
       bgSize="cover"
       bgPos={["right", "center", "center"]}
-      width={["300px", "450px", "604.934px"]}
-      minH={["250px", "270px", "280px", "355.844px"]}
+      width={["300px", "450px", "500px"]}
+      minH={["250px", "250px", "270px"]}
       p={["20px 12px", "20px 12px", "67px 28px"]}
       m="0px auto 30px auto"
       borderRadius="12px"

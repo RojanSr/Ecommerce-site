@@ -16,7 +16,7 @@ export default function Footer() {
         >
           <Text
             color="#fff"
-            fontSize={{ base: "9px", lg: "18px" }}
+            fontSize={{ base: "9px", lg: "12px" }}
             fontWeight="500"
           >
             Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.

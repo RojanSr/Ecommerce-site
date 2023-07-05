@@ -12,7 +12,7 @@ export default function Card({
 }) {
   return (
     <Box
-      h={["300px", "380px", "480px", "500px"]}
+      h={["300px", "360px", "380px", "400px"]}
       bgImage={imgSrc}
       bgRepeat="no-repeat"
       bgPos="top"
