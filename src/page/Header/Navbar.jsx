@@ -86,6 +86,7 @@ export default function Navbar() {
             top="0"
             minH="100vh"
             p="30px 100px 30px 30px"
+            zIndex={100}
           >
             <List
               display="flex"
@@ -100,10 +101,10 @@ export default function Navbar() {
               >
                 <CloseIcon />
               </Box>
-              <ListItem _hover={hoverStyle}>Shop</ListItem>
-              <ListItem _hover={hoverStyle}>Men</ListItem>
-              <ListItem _hover={hoverStyle}>Women</ListItem>
-              <ListItem _hover={hoverStyle}>Combo</ListItem>
+              <ListItem cursor="pointer">Shop</ListItem>
+              <ListItem cursor="pointer">Men</ListItem>
+              <ListItem cursor="pointer">Women</ListItem>
+              <ListItem cursor="pointer">Combo</ListItem>
             </List>
           </Box>
         )}
