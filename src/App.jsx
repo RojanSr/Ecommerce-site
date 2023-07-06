@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Box } from "@chakra-ui/react";
 
 // Import Components
@@ -14,29 +14,14 @@ import Combo from "./page/Combo/Combo.jsx";
 import ProductView from "./page/ProductView/index.jsx";
 
 import { Route, Routes } from "react-router-dom";
-import axios from "axios";
+import { ProductContextProvider } from "./page/ProductContext.jsx";
 
 // Create context for product api
-export const ProductContext = React.createContext();
 export default function App() {
-  // Store product infos fetched in state
-  const [products, setProducts] = useState([]);
-
-  // Fetching data from fakestoreapi.com
-  function fetchData() {
-    axios
-      .get("https://fakestoreapi.com/products")
-      .then((data) => setProducts(data.data))
-      .catch((err) => console.error(err));
-  }
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   return (
     <Box minW="100vw" maxW="100vw" overflow="hidden">
       <Navbar />
-      <ProductContext.Provider value={products ? products : []}>
+      <ProductContextProvider>
         <Routes>
           {/* Route to Home */}
           <Route path="/" element={<Home />} />
@@ -51,12 +36,12 @@ export default function App() {
           <Route path="/ProductView/:id" element={<ProductView />} />
 
           {/* Route to Combo page */}
-          <Route path="/Combo" element={<Combo s />} />
+          <Route path="/Combo" element={<Combo />} />
 
           {/* Route to not found page */}
           <Route path="*" element={<ErrorPage />} />
         </Routes>
-      </ProductContext.Provider>
+      </ProductContextProvider>
       <Footer />
     </Box>
   );
