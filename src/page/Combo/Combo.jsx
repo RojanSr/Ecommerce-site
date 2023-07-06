@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ProductContext } from "../../App";
+import { ProductContext } from "../ProductContext";
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import ContentTitle from "../../components/ContentTitle";
 import Card from "../../components/Card";

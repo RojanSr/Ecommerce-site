@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Box, Button, Flex, Image } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
-import { ProductContext } from "../../App";
+import { ProductContext } from "../ProductContext";
 import ProductDetails from "./ProductDetails";
 import ContentTitle from "../../components/ContentTitle";
 

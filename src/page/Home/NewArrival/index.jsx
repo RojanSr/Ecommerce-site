@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Card from "../../../components/Card";
 import { Flex, Box } from "@chakra-ui/react";
-import { ProductContext } from "../../../App";
+import { ProductContext } from "../../ProductContext";
 
 export default function NewArrival() {
   const product = useContext(ProductContext);
