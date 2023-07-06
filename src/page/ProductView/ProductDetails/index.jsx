@@ -8,7 +8,10 @@ export default function ProductDetails(props) {
       <Heading fontSize={{ base: "22px", lg: "34px" }} fontWeight="600">
         {props.title}
       </Heading>
-      <SizeSelect />
+
+      {/* Size Select appear when category is clothing only*/}
+      {props.category.includes("clothing") && <SizeSelect />}
+
       <Text my="20px">
         Price:{" "}
         <Text as="span" color="red.500">

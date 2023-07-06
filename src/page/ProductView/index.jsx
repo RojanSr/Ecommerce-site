@@ -39,7 +39,11 @@ export default function ProductView() {
           ></Image>
         </Box>
         <Box mt="50px">
-          <ProductDetails title={selected.title} price={selected.price} />
+          <ProductDetails
+            title={selected.title}
+            price={selected.price}
+            category={selected.category}
+          />
           <Flex gap="40px">
             <Button>Add to cart</Button>
             <Button>Add to Favourite</Button>
