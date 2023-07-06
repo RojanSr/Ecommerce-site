@@ -42,9 +42,15 @@ export default function Navbar() {
           alignItems="center"
           gap={["15px", "15px", "20px", "40px"]}
         >
-          <ListItem _hover={hoverStyle}>Shop</ListItem>
-          <ListItem _hover={hoverStyle}>Men</ListItem>
-          <ListItem _hover={hoverStyle}>Women</ListItem>
+          <ListItem _hover={hoverStyle}>
+            <Link to="/">Shop</Link>
+          </ListItem>
+          <ListItem _hover={hoverStyle}>
+            <Link to="/men">Men</Link>
+          </ListItem>
+          <ListItem _hover={hoverStyle}>
+            <Link to="/women">Women</Link>
+          </ListItem>
           <ListItem _hover={hoverStyle}>
             <Link to="/Combo">Combo</Link>
           </ListItem>
@@ -106,9 +112,15 @@ export default function Navbar() {
               >
                 <CloseIcon />
               </Box>
-              <ListItem cursor="pointer">Shop</ListItem>
-              <ListItem cursor="pointer">Men</ListItem>
-              <ListItem cursor="pointer">Women</ListItem>
+              <ListItem cursor="pointer">
+                <Link to="/">Shop</Link>
+              </ListItem>
+              <ListItem cursor="pointer">
+                <Link to="/men">Men</Link>
+              </ListItem>
+              <ListItem cursor="pointer">
+                <Link to="/women">Women</Link>
+              </ListItem>
               <ListItem cursor="pointer">
                 <Link to="/Combo">Combo</Link>
               </ListItem>
