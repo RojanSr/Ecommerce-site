@@ -99,7 +99,7 @@ export default function BigSavingZone() {
         <Sliderify
           navPrevIcon={<LeftArrow fontSize="2rem" color="#3C4242" />}
           navNextIcon={<RightArrow fontSize="2rem" color="#3C4242" />}
-          slideDurationInSecs="8"
+          slideDurationInSecs="5"
           rounded="12px"
         >
           <Card
