@@ -1,6 +1,6 @@
 # Ecommerce Site
 
-Live Site Here: <a href="https://dulcet-basbousa-194dcb.netlify.app" target="_blank">Checkout</a>
+Live Site Here: <a href="https://653219499c13a7627201ded5--dulcet-basbousa-194dcb.netlify.app/" target="_blank">Checkout</a>
 
 ## Dependencies so far
 
